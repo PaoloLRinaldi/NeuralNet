@@ -1,0 +1,385 @@
+
+big_lib.cpp,261
+void rmEcho(33,670
+void setEcho(46,833
+int kbhit(60,1023
+int getch(90,1553
+std::vector<file_info> getls_str(106,1920
+unsigned int default_menu(148,2982
+std::string exec(161,3335
+std::string my_dir(182,3788
+int nrand(202,4594
+int users_choice(217,4884
+
+neural_web.cpp,1192
+using std::istringstream;16,248
+using std::vector;17,274
+using std::cout;18,293
+using std::cin;19,310
+using std::endl;20,326
+using std::default_random_engine;21,343
+using std::normal_distribution;22,377
+double Node::get_val(25,428
+void Node::change_weights(37,868
+void Node::change_weights(46,1113
+NeuralWeb::NeuralWeb(58,1481
+vector<double> NeuralWeb::ask_output_layer(85,2430
+vector<double> NeuralWeb::train_output_layer(99,2891
+vector<double> NeuralWeb::train_output_layer(111,3414
+size_t NeuralWeb::ask(120,3771
+size_t NeuralWeb::train(129,4182
+size_t NeuralWeb::train(138,4557
+void NeuralWeb::update_result(145,4875
+vector<double> NeuralWeb::inverse_ask_sigm_sigm(165,5623
+void NeuralWeb::load_web(206,6924
+void NeuralWeb::load_web(306,10055
+void NeuralWeb::save_web(312,10165
+void NeuralWeb::save_web(381,12234
+void NeuralWeb::update_softmax_denominator(388,12437
+double NeuralWeb::softmax(395,12592
+double sigmoid(400,12688
+std::vector<double> NeuralWeb::improve_input(405,12799
+void NeuralWeb::calculate_gradient(450,14385
+void NeuralWeb::update_weights_bias(541,17760
+void NeuralWeb::print_values(578,18966
+std::string NeuralWeb::layers_info(618,20124
+
+neural_web_flymake.cpp,1192
+using std::istringstream;16,248
+using std::vector;17,274
+using std::cout;18,293
+using std::cin;19,310
+using std::endl;20,326
+using std::default_random_engine;21,343
+using std::normal_distribution;22,377
+double Node::get_val(25,428
+void Node::change_weights(37,868
+void Node::change_weights(46,1113
+NeuralWeb::NeuralWeb(58,1481
+vector<double> NeuralWeb::ask_output_layer(85,2430
+vector<double> NeuralWeb::train_output_layer(99,2891
+vector<double> NeuralWeb::train_output_layer(111,3414
+size_t NeuralWeb::ask(120,3771
+size_t NeuralWeb::train(129,4182
+size_t NeuralWeb::train(138,4557
+void NeuralWeb::update_result(145,4875
+vector<double> NeuralWeb::inverse_ask_sigm_sigm(165,5623
+void NeuralWeb::load_web(206,6924
+void NeuralWeb::load_web(306,10055
+void NeuralWeb::save_web(312,10165
+void NeuralWeb::save_web(381,12234
+void NeuralWeb::update_softmax_denominator(388,12437
+double NeuralWeb::softmax(395,12592
+double sigmoid(400,12688
+std::vector<double> NeuralWeb::improve_input(405,12799
+void NeuralWeb::calculate_gradient(450,14385
+void NeuralWeb::update_weights_bias(541,17760
+void NeuralWeb::print_values(578,18966
+std::string NeuralWeb::layers_info(618,20124
+
+old_numb_recog.cpp,16
+int main(6,104
+
+phases_sets.cpp,407
+using std::vector;7,105
+using std::random_shuffle;8,124
+using std::copy;9,151
+using std::back_inserter;10,168
+using std::string;11,194
+using std::vector;12,213
+PhasesSets::PhasesSets(15,234
+std::pair<std::vector<double>, int> PhasesSets::train_input(68,2334
+std::pair<std::vector<double>, int> PhasesSets::test_input(74,2593
+std::vector<double> PhasesSets::read_input(80,2844
+int myrand(113,3663
+
+readbindataset.cpp,364
+using std::vector;7,110
+using std::cout;8,129
+using std::cin;9,146
+using std::endl;10,162
+ReadBinDataset::ReadBinDataset(14,216
+std::istream& ReadBinDataset::read_magic_number(56,1355
+std::vector<double> ReadBinDataset::get_hole_input(73,1985
+std::vector<double> ReadBinDataset::get_hole_input_norm(84,2384
+double ReadBinDataset::switch_datatype(113,3447
+
+read_mnist.cpp,43
+void Read_MNIST::print_image_and_sol(4,40
+
+settings.cpp,753
+using std::string;9,138
+using std::vector;10,157
+using std::pair;11,176
+using std::getline;12,193
+using std::istringstream;13,213
+using std::endl;14,239
+using std::cin;15,256
+using std::cout;16,272
+using std::find_if;17,289
+using std::to_string;18,309
+string setting_elem<setting_elem29,651
+string setting_elem(33,759
+string setting_elem<setting_elem40,902
+string setting_elem<setting_elem47,1052
+string setting_elem<setting_elem60,1299
+pair <bool, T> next_setting(71,1531
+pair <bool, bool> next_setting_y_n(100,2458
+void Settings::instructions(111,2839
+std::ostream &Settings::settings_file_content(Settings::settings_file_content164,5609
+void Settings::read_settings_file(344,16607
+FileNameInfo get_file_name_infos(456,21666
+
+trainitez.cpp,710
+using std::cin;20,366
+using std::cout;21,382
+using std::endl;22,399
+using std::cerr;23,416
+using std::string;24,433
+using std::sort;25,452
+using std::find_if;26,469
+using std::equal;27,489
+using std::to_string;28,507
+using std::ifstream;29,529
+using std::ofstream;30,550
+using std::vector;31,571
+using std::getline;32,590
+using std::find_if;33,610
+using std::isspace;34,630
+using std::istringstream;35,650
+using std::pair;36,676
+using std::back_inserter;37,693
+using std::isdigit;38,719
+int main(58,1433
+bool y_n_request(126,3709
+void gen_settings_file(140,4030
+NeuralWeb set_web_from_settings(184,5593
+void do_test_only(250,7936
+void do_train_test(256,8089
+void save_stuff(431,14164
+
+arr_scale.h,297
+#define ARR_SCALE_H2,20
+struct Coords 6,63
+  int xmin;7,79
+  int ymin;8,91
+  int length;9,103
+Coords centered_mat_coords(13,140
+void arr_shrink1(70,1303
+void arr_shrink2(87,1801
+void arr_shrink2(106,2600
+void arr_stretch1(111,2757
+void arr_stretch2(127,3109
+void arr_stretch2(147,3880
+
+big_lib.h,727
+#define GUARD_big_lib_h2,24
+class file_info 8,103
+ file_info(file_info::file_info11,154
+  bool is_dir(file_info::is_dir12,222
+  const std::string& name(file_info::name13,260
+  operator std::string(file_info::operator std::string14,316
+  std::string file_name;file_info::file_name16,375
+  bool dir;file_info::dir17,400
+class Difftime 20,416
+  void set_begin(Difftime::set_begin22,442
+  void set_end(Difftime::set_end23,487
+  double ms_till_now(Difftime::ms_till_now24,528
+  double ms_till_end(Difftime::ms_till_end27,622
+  double s_till_now(Difftime::s_till_now30,707
+  double s_till_end(Difftime::s_till_end33,774
+  std::clock_t begin;Difftime::begin38,854
+  std::clock_t end;Difftime::end39,876
+
+neural_web.h,2009
+#define GUARD_NEURAL_WEB_H3,40
+inline double leaky_ReLU(16,254
+inline double der_leaky_ReLU(19,324
+inline double ReLU(22,394
+inline double der_ReLU(25,451
+inline double der_sigmoid(29,530
+inline double linear(33,626
+inline double der_linear(36,673
+class Node 44,827
+  Node(Node::Node47,867
+  double operator=(Node::operator=57,1339
+  operator double(Node::operator double58,1394
+  double get_bias(Node::get_bias61,1452
+  double value;Node::value68,1819
+  double bias;Node::bias69,1835
+  std::vector<double> weights;Node::weights70,1850
+  bool bias_enabled Node::bias_enabled71,1881
+class NeuralWeb 77,1916
+  void set_cost_function(NeuralWeb::set_cost_function105,3219
+  void set_last_layer_activation_function(NeuralWeb::set_last_layer_activation_function106,3280
+  void set_batch NeuralWeb::set_batch113,3476
+  void set_tau NeuralWeb::set_tau114,3525
+  void set_grad_pass NeuralWeb::set_grad_pass115,3564
+  void set_bias(NeuralWeb::set_bias116,3619
+  void set_hidden_layer_activation_function(NeuralWeb::set_hidden_layer_activation_function117,3665
+  void set_softmax(NeuralWeb::set_softmax123,3838
+  double grad_mod(NeuralWeb::grad_mod128,3912
+  std::vector<unsigned int> layers_info_vec(NeuralWeb::layers_info_vec132,4003
+  std::vector<std::vector<Node>> nodes;NeuralWeb::nodes138,4113
+  std::vector<unsigned int> n_nodes;NeuralWeb::n_nodes139,4153
+  size_t max_n_grads NeuralWeb::max_n_grads142,4207
+  double tau NeuralWeb::tau143,4336
+  double grad_pass NeuralWeb::grad_pass144,4401
+  double grad_module;NeuralWeb::grad_module145,4455
+  bool bias_enabled NeuralWeb::bias_enabled146,4477
+  size_t n_grads NeuralWeb::n_grads147,4505
+  std::vector<std::vector<double>> gradients;NeuralWeb::gradients150,4667
+  double der_softmax(NeuralWeb::der_softmax157,4961
+  bool using_softmax NeuralWeb::using_softmax161,5065
+  double softmax_denominator;NeuralWeb::softmax_denominator163,5132
+  int cost_function NeuralWeb::cost_function168,5427
+
+phases_sets.h,847
+class PhasesSets 13,173
+  size_t tot_train_size(PhasesSets::tot_train_size17,225
+  size_t tot_test_size(PhasesSets::tot_test_size18,303
+  int n_input(PhasesSets::n_input19,367
+  int n_output(PhasesSets::n_output20,414
+  void new_train(PhasesSets::new_train22,465
+  void new_test(PhasesSets::new_test39,873
+  std::pair<PhasesSets::std::pair41,914
+  std::pair<PhasesSets::std::pair42,976
+  int test_sz;PhasesSets::test_sz46,1050
+  int total_sz;PhasesSets::total_sz47,1065
+  int train_index;PhasesSets::train_index48,1081
+  int test_index;PhasesSets::test_index49,1100
+  std::vector<std::string> in_foldier;PhasesSets::in_foldier51,1121
+  std::vector<std::string> phase;PhasesSets::phase52,1160
+  std::vector<int> test_order;PhasesSets::test_order54,1197
+  std::vector<int> train_order;PhasesSets::train_order55,1228
+
+readbindataset.h,1145
+#define GUARD_READBINDATASET_H2,52
+class ReadBinDataset 12,221
+  virtual std::pair<ReadBinDataset::std::pair20,489
+  virtual size_t size(ReadBinDataset::size21,577
+  std::vector<unsigned int> get_dimentions(ReadBinDataset::get_dimentions24,754
+  unsigned char n_dimentions;ReadBinDataset::n_dimentions28,877
+  std::vector<unsigned int> dimentions;ReadBinDataset::dimentions29,1049
+  mutable std::ifstream fis;ReadBinDataset::fis31,1254
+  unsigned char data_type;ReadBinDataset::data_type32,1304
+  unsigned int data_size;ReadBinDataset::data_size33,1402
+  unsigned int single_input_size;ReadBinDataset::single_input_size34,1559
+  unsigned int begin_data_pos;ReadBinDataset::begin_data_pos35,1638
+  bool is_little_endian ReadBinDataset::is_little_endian36,1714
+  int min_norm;ReadBinDataset::min_norm37,1796
+  int max_norm;ReadBinDataset::max_norm38,1841
+  std::istream& jump_to(ReadBinDataset::jump_to42,2058
+  template <typename T> T get_binary_integer(ReadBinDataset::get_binary_integer49,2350
+  template <typename T> T get_binary_float(ReadBinDataset::get_binary_float57,2590
+inline double normalize(66,2869
+
+read_mnist.h,433
+#define READ_MNIST_H3,34
+class Read_MNIST 13,202
+  explicit Read_MNIST(Read_MNIST::Read_MNIST20,402
+  size_t size(Read_MNIST::size34,958
+  std::vector<unsigned int> get_input_dimentions(Read_MNIST::get_input_dimentions35,1021
+  unsigned int get_sol(Read_MNIST::get_sol38,1113
+  std::pair<Read_MNIST::std::pair41,1209
+  ~Read_MNIST(Read_MNIST::~Read_MNIST46,1442
+  ReadBinDataset *sol_data;Read_MNIST::sol_data50,1517
+
+settings.h,3186
+#define SETTINGS_H3,32
+class Settings 10,128
+  std::pair Settings::std::pair16,247
+  std::pair <bool, std::string> web_file Settings::web_file16,247
+  std::pair Settings::std::pair17,314
+  std::pair <bool, std::vector<unsigned int>> web_structure Settings::web_structure17,314
+  std::pair Settings::std::pair18,414
+  std::pair <bool, std::string> hlact Settings::hlact18,414
+  std::pair Settings::std::pair19,487
+  std::pair <bool, std::string> olact Settings::olact19,487
+  std::pair Settings::std::pair20,560
+  std::pair <bool, int> cost_function Settings::cost_function20,560
+  std::pair Settings::std::pair21,611
+  std::pair <bool, int> batch Settings::batch21,611
+  std::pair Settings::std::pair22,654
+  std::pair <bool, double> tau Settings::tau22,654
+  std::pair Settings::std::pair23,698
+  std::pair <bool, double> gradient_step Settings::gradient_step23,698
+  std::pair Settings::std::pair24,755
+  std::pair <bool, bool> bias Settings::bias24,755
+  std::pair Settings::std::pair27,814
+  std::pair <bool, bool> is_little_endian Settings::is_little_endian27,814
+  std::pair Settings::std::pair28,872
+  std::pair <bool, bool> data_stored_tadily Settings::data_stored_tadily28,872
+  std::pair Settings::std::pair29,933
+  std::pair <bool, double> min_norm Settings::min_norm29,933
+  std::pair Settings::std::pair30,982
+  std::pair <bool, double> max_norm Settings::max_norm30,982
+  std::pair Settings::std::pair33,1044
+  std::pair <bool, std::string> sets_file Settings::sets_file33,1044
+  std::pair Settings::std::pair34,1113
+  std::pair <bool, size_t> test_sz Settings::test_sz34,1113
+  std::pair Settings::std::pair35,1169
+  std::pair <bool, bool> test_only Settings::test_only35,1169
+  std::pair Settings::std::pair36,1221
+  std::pair <bool, bool> test_entire Settings::test_entire36,1221
+  std::pair Settings::std::pair37,1274
+  std::pair <bool, bool> train_until_overfitted Settings::train_until_overfitted37,1274
+  std::pair Settings::std::pair38,1338
+  std::pair <bool, size_t> training_cycles Settings::training_cycles38,1338
+  std::pair Settings::std::pair39,1394
+  std::pair <bool, bool> train_until_better Settings::train_until_better39,1394
+  std::pair Settings::std::pair40,1454
+  std::pair <bool, double> train_until_better_than Settings::train_until_better_than40,1454
+  std::pair Settings::std::pair43,1539
+  std::pair <bool, bool> save_when_finishes Settings::save_when_finishes43,1539
+  std::pair Settings::std::pair44,1599
+  std::pair <bool, bool> overwrite_if_better Settings::overwrite_if_better44,1599
+  std::pair Settings::std::pair47,1673
+  std::pair <bool, bool> update_this Settings::update_this47,1673
+struct FileNameInfo 54,1904
+  double perc FileNameInfo::perc55,1926
+  std::vector<unsigned int> layersinfo;FileNameInfo::layersinfo56,1945
+  unsigned int train_sz FileNameInfo::train_sz57,1985
+  unsigned int test_sz FileNameInfo::test_sz58,2014
+  unsigned int traininground FileNameInfo::traininground59,2042
+  bool is_set FileNameInfo::is_set60,2076
+  bool is_web FileNameInfo::is_web61,2099
+  bool is_good FileNameInfo::is_good62,2122
+
+traintestsets.h,1985
+#define TRAINTESTSETS_H2,24
+inline int myrand(19,304
+inline std::vector<int> ordered_vec(29,545
+class TrainTestSets 37,709
+ TrainTestSets(TrainTestSets::TrainTestSets41,758
+  void begin_new_train(TrainTestSets::begin_new_train75,2017
+  void begin_new_test(TrainTestSets::begin_new_test79,2151
+  bool train_not_finished(TrainTestSets::train_not_finished82,2249
+  bool test_not_finished(TrainTestSets::test_not_finished84,2378
+  std::pair<TrainTestSets::std::pair86,2487
+  std::pair<std::vector<double>, int> next_train_elem(TrainTestSets::next_train_elem86,2487
+  std::pair<TrainTestSets::std::pair92,2733
+  std::pair<std::vector<double>, unsigned int> next_test_elem(TrainTestSets::next_test_elem92,2733
+  size_t size(TrainTestSets::size99,2975
+  size_t test_size(TrainTestSets::test_size100,3026
+  size_t train_size(TrainTestSets::train_size101,3074
+  std::pair<TrainTestSets::std::pair102,3135
+  std::vector<int>::size_type train_index(TrainTestSets::train_index109,3434
+  std::vector<int>::size_type test_index(TrainTestSets::test_index110,3509
+  void save_sets(TrainTestSets::save_sets113,3610
+  void load_sets(TrainTestSets::load_sets121,3838
+  std::shared_ptr<const T> raw_set_;TrainTestSets::raw_set_156,4856
+  size_t test_sz_;TrainTestSets::test_sz_157,4972
+  std::vector<int> train_elems_;TrainTestSets::train_elems_159,5043
+  std::vector<int>::size_type train_elems_index_ TrainTestSets::train_elems_index_160,5137
+  std::vector<int> test_elems_;TrainTestSets::test_elems_162,5213
+  std::vector<int>::size_type test_elems_index_ TrainTestSets::test_elems_index_163,5245
+  void unequal_set_init(TrainTestSets::unequal_set_init167,5427
+  void equal_set_init(TrainTestSets::equal_set_init174,5866
+double test_result 220,8625
+double test_from_train_set 259,10294
+double train_from_set 282,11100
+std::string gen_file_name(305,11826
+void save_web_sets 324,12394
+void load_web_sets 334,12713
+void load_web_sets 340,12915

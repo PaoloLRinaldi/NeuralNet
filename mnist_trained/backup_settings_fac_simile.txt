@@ -1,0 +1,138 @@
+# SETTINGS INDEX
+# PART 1 --------- Set up of the Neural Web
+  # PART 1.1 ----- General web structure
+    # PART 1.1.1 - Load a preexisting Neural Web
+    # PART 1.1.2 - Structure of a new Neural Web
+  # PART 1.2 ----- Parameters of the Neural Web
+# PART 2 --------- Inputs/Solutions file(s) infos
+# PART 3 --------- Training/Testing settings
+  # PART 3.1 ----- Training and test sets
+    # PART 3.1.1 - Load sets file
+    # PART 3.1.2 - Set up sets
+  # PART 3.2 ----- Set up training/settings
+# PART 4 --------- Saving sets and web files
+# PART 5 --------- Update this settings file
+
+# +++ BEGINNING OF PART 1 +++ Set up of the Neural Web
+
+  # +++ BEGINNING OF PART 1.1 +++ General web structure
+  
+    # +++ BEGINNING OF PART 1.1.1 +++ Load a preexisting Neural Web
+
+      # DON'T MODIFY THIS SECTION (1.1.1) IF YOU WANT
+      # TO CREATE A NEW NEURAL WEB
+
+      Web file = 
+
+    # +++ END OF PART 1.1.1 +++  Load a preexisting Neural Web
+    
+    # +++ BEGINNING OF PART 1.1.2 +++ Structure of a new Neural Web
+
+      # IF YOU HAVE INSERTED THE "Web file"
+      # IN SECTION (1.1.1) THEN
+      # THIS SECTION (1.1.2) WILL BE IGNORED
+
+      Web structure (input layer [hidden layers separated by "space"] output layer) = 
+      Hidden layers activation function (sigmoid, ReLU, leaky_ReLU, linear) = sigmoid
+      Output layer activation function (sigmoid, ReLU, leaky_ReLU, linear) = sigmoid
+      Cost function (0: Quadratic, 1: Cross-Entropy) = 0
+    
+    # +++ END OF PART 1.1.2 +++ Structure of a new Neural Web
+
+  # +++ END OF PART 1.1 +++ General web structure
+
+  # +++ BEGINNING OF PART 1.2 +++ Parameters of the Neural Web
+
+    # IF YOU WANT TO MODIFY A NEURAL WEB YOU
+    # UPLOADED THEN MAKE SURE YOU LEAVE IN
+    # BLANK THOSE PARAMETERS YOU WANT TO
+    # BE UNCHANGED, OR AT LEAST INSERT
+    # THE SAME VALUES. THE VALUES ALREADY
+    # INSERTED ARE THE DEFAULT VALUES
+
+    Batch lenght (how many inputs before modifying the web) = 1
+    Tau (keeps wieghts around 0 to stay away from 0 derivarive in sigmoid) = 0
+    Reducer of gradient step = 0.01
+    Use bias (0: yes, 1: no) = 0
+
+  # +++ END OF PART 1.2 +++ Parameters of the Neural Web
+
+# +++ END OF PART 1 +++ Set up of the Neural Web
+
+# +++ BEGINNING OF PART 2 +++ Inputs/Solutions file(s) infos
+
+  Data in little endian (used by most intel processors) (0) or big endian (1) = 0
+  Data stored tadily (0: yes, 1: no) = 1
+
+# +++ END OF PART 2 +++ Inputs/Solutions file(s) infos
+
+# +++ BEGINNING OF PART 3 +++ Training/Testing settings
+
+  # +++ BEGINNING OF PART 3.1 +++ Training and test sets
+
+    # +++ BEGINNING OF PART 3.1.1 +++ Load sets file
+
+      # LEAVE BLANK THIS SECTION (3.1.1) IF
+      # YOU WANT TO SET UP NEW SETS
+
+      Sets file =
+
+    # +++ END OF PART 3.1.1 +++ Load sets file
+
+    # +++ BEGINNING OF PART 3.1.2 +++ Set up sets
+
+      # THIS SECTION (3.1.2) WILL BE IGNORED
+      # IF YOU PROVIDED THE "Sets file" IN
+      # SECTION (3.1.1)
+      
+      Test set size (if data stored tadily, the output layer must be a divisor of both test size and total size) =
+
+    # +++ END OF PART 3.1.2 +++ Set up sets
+
+  # +++ END OF PART 3.1 +++ Training and test sets
+
+  # +++ BEGINNING OF PART 3.2 +++ Set up training/settings
+
+    # THE SETTINGS IN THIS SECTION (3.2)
+    # ARE NOT MUTUALLY EXCLUSIVE. THE
+    # TRAINING WILL GO ON UNTIL
+    # ONE OF THESE SETTINGS IS VERIFIED
+
+    Train until it is very likely it is overfitted (0: yes, 1: no) = 1
+    Training cycles = 1
+
+    # THIS SETTING WILL BE CONSIDERATED ONLY IF
+    # A SETS FILE HAS BEEN LOADED AND IT HAS
+    # THE FOLLOWING FORMAT:
+    # perc_<integer_part>_<decimals>_layersinfo_<layers_separated_by_underscore>_trainsz_<train size>_testsz_<test size>_traininground_<training round>_sets.txt
+    # THE WEB FILE BE BETTER BE OF THE SAME
+    # FORMAT AND HAVE THE SAME NUMBERS THOUGH
+    Train until it gets a better percentage (0: yes, 1: no) = 0
+
+    Train until it gets a better percentage than (you can leave blank) =
+
+  # +++ END OF PART 3.2 +++ Set up training/settings
+
+# +++ END OF PART 3 +++ Training/Testing settings
+
+# +++ BEGINNING OF PART 4 +++ Saving sets and web files
+
+  Save file when training finishes (0: yes, 1: no) = 0
+
+  # THIS SETTING WILL BE CONSIDERATED ONLY IF
+  # BOTH THE SETS AND WEB FILES PROVIDED
+  # HAVE THE FORMAT DESCRIBED IN SECTION (3.2)
+  Overwrite sets and weights file if percentage is better (0: yes, 1: no) = 0
+
+# +++ END OF PART 4 +++ Saving sets and web files
+
+# +++ BEGINNING OF PART 5 +++ Update this settings file
+
+  # THIS SECTION (5) WILL BE CONSIDERATED
+  # ONLY IF AT THE END OF THE TRAINING
+  # NEW WEB AND SETS FILES HAVE BEEN
+  # SAVED (OR OVERWEITTEN THE PREVIOUS)
+
+  Update this setings file to be used on updated web and sets file (0: yes, 1: no) = 0
+
+# +++ END OF PART 5 +++ Update this settings file

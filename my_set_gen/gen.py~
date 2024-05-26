@@ -1,0 +1,92 @@
+# SCRIVERE SOLO CARATTERI NEL RANGE
+# ASCII CLASSICO [0, 127], QUINDI
+# NIENTE LETTERE ACCENTATE O
+# CARATTERI STRANI
+from struct import pack
+from random import randint
+
+def dtype_str_to_val(type_name):
+    if not (type(type_name) is str):
+        raise TypeError("You must insert a string.")
+    if type_name == 'unsigned char':
+        return 0x08
+    elif type_name == 'char':
+        return 0x09
+    elif type_name == 'short':
+        return 0x0B
+    elif type_name == 'int':
+        return 0x0C
+    elif type_name == 'float':
+        return 0x0D
+    elif type_name == 'double':
+        return 0x0E
+    else :
+        raise ValueError("Unknown type name: " + type_name)
+
+def dtype_str_to_char(dtype):
+    if not (type(dtype) is int) and not (type(dtype) is long):
+        raise TypeError("You must provide an integer number")
+    if dtype == 0x08:
+        return 'B'
+    elif dtype == 0x09:
+        return 'c'
+    elif dtype == 0x0B:
+        return 'h'
+    elif dtype == 0x0C:
+        return 'i'
+    elif dtype == 0x0D:
+        return 'f'
+    elif dtype == 0x0E:
+        return 'd'
+    else:
+        raise ValueError("Value out of range!")
+#############################
+# METTERE I VALORI CHE VUOI #
+#############################
+file_name = "even_odd_train.txt"
+# Numero di dimensioni, 1 se sono
+# singoli numeri, 2 se sono vettori,
+# 3 se sono matrici
+n_dims = 2
+# Lunghezza su ogni dimensione
+dims = [1000000, 2]
+# Di che tipo li metti gli input?
+str_type = "int"
+#############################
+# FINITI I VALORI CHE VUOI  #
+#############################
+
+#######################################
+# COSTRUZIONE DEGLI INPUT E SOLUZIONI #
+#######################################
+# cont dovra' contenere input e soluzione,
+# dopo ogni input inserire la soluzione
+cont = []
+
+for a in range(0, 1000000, 2):
+    cont.append(a)
+    cont.append(0)
+for a in range(1, 1000000, 2):
+    cont.append(a)
+    cont.append(1)
+
+
+############################################
+# FINE COSTRUZIONE DEGLI INPUT E SOLUZIONI #
+############################################
+
+
+file = open(file_name, "wb")
+# I primi 2 sono vuoti, scelgo unsigned char,
+# 2 dimensioni, la prima e' 1000, la seconda e' 3
+nullnum = 0
+# Voglio che gli input siano unsigned char
+data_type = dtype_str_to_val(str_type)
+# Il "<" sta per "little endian", B per
+# unsigned char, i per int
+s = pack('<BBBB' + 'i' * n_dims, nullnum, nullnum, data_type, n_dims, *dims)
+file.write(s)
+
+# Qui scrivo su file e chiudo
+file.write(pack('<' + dtype_str_to_char(data_type) * len(cont), *cont))
+file.close()
